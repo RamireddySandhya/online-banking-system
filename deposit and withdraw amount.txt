@@ -1,0 +1,50 @@
+package bank;
+
+import java.util.Scanner;
+
+public class project2 {
+	private String accountno;
+    private String name;
+    private long balance;
+
+    Scanner KB = new Scanner(System.in);
+
+    //method to open an account
+    void openAccount() {
+        System.out.print("Enter Account No: ");
+        accountno = KB.next();
+        System.out.print("Enter Name: ");
+        name = KB.next();
+        System.out.print("Enter Balance: ");
+        balance = KB.nextLong();
+    }
+
+    void showAccount() {
+        System.out.println(accountno + "," + name + "," + balance);
+    }
+
+    void deposit() {
+        long amount;
+        System.out.println("Enter Amount U Want to Deposit : ");
+        amount = KB.nextLong();
+        balance = balance + amount;
+        
+    }
+        void withdrawal() {
+            long amount;
+            System.out.println("Enter Amount U Want to withdraw : ");
+            amount = KB.nextLong();
+            if (balance >= amount) {
+                balance = balance - amount;
+            } else {
+                System.out.println("Less Balance..Transaction Failed..");
+            }
+        }
+
+    
+
+
+
+}
+
+

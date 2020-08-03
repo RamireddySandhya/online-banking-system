@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>BANKING</title>
+</head>
+<body>
+<script>
+function myfun(accountno,name,balance){
+	var account= myfunc();
+	account.accountno=accountno;
+	account.name = name;
+	account.balance = balance;
+	return accountno,name,balance;
+}
+function myfunction(deposit){
+account.deposit = myfunction();
+newbalance = account.balance + deposit;
+return newbalance;
+console.log("ur balance is:" + newbalance);
+
+}
+function myfunction2(withdraw){
+	account.withdraw = myfunction();
+	if(banalce < withraw ){
+	newbalance = account.balance - withdraw;
+}
+	return newbalance;
+
+	else
+		{console.log("u have insufficient balance");
+		}
+		}
+	myfun(7654321,john,9800){
+		console.log("ur details"  );
+	}
+	myfunction(1000){
+		console.log("ur balance is:" + newbalance);
+
+myfun(7654321,john,9800){
+	console.log("ur details"  );
+}
+
+myfunction(1000){
+	console.log("ur balance is:" + newbalance);
+	myfunction2(500){
+	console.log("uy current balance is" + newbalance);	
+	}
+	
+
+	
+};
+</script>
+</body>
+</html>

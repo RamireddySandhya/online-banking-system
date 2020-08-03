@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.*,java.util.*"%>
+
+<%
+String transcation_details=request.getParameter("transcation_details");
+String acc_no=request.getParameter("accountno");
+String amt_transfer=request.getParameter("amounttransfer");
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/transaction", "root", "Sandhya@123456");
+Statement st=conn.createStatement();
+st.executeUpdate("insert into bank1(transcation_details,acc_no,amt_transfer)values('"+transcation_details+"','"+accountno+"','"+amounttransfer+"')");
+response.sendRedirect("your transcation is succussfull.html");
+}
+catch(Exception e)
+{
+response.sendRedirect("ERROR.html");
+System.out.print(e);
+e.printStackTrace();
+}
+%>
+System.out.print(e);
+e.printStackTrace();
+}
+%>

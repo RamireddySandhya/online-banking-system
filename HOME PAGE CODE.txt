@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>HOME PAGE</title>
+</head>
+<body>
+bgcolor="0FFFF">
+
+	<form>
+	<center>
+	 BANKING TRANSACTIONS <br>  <br>
+        <input type="button" id="idname" value = "Transfer fund " onclick="goToInfo()"/><br>
+	</center>  
+	</form>
+
+	<script type="text/javascript">
+        function goToInfo()
+	{
+	window.location = 'http://localhost:8080/fundstransfer.html';
+        }
+        </script>
+
+
+</body>
+</html>

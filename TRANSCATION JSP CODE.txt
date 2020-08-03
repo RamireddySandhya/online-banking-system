@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>TRANSCATION DETAILS</title>
+ <BODY bgcolor="#0FFFF">
+ <center>
+  <TABLE style="background-color: #FFFFF;" WIDTH="40%" >
+  <TR>
+	<TH width="80%">NAME</TH>
+	 <TD width="80%"><INPUT TYPE="text" NAME="transcation_details"></TD>
+	  </TR>
+          
+	   <TR>
+	         <TH width="60%">ACCOUNT NUMBER</TH>
+		 <TD width="60%"><INPUT TYPE="number" NAME="acc_no"></TD>
+	  </TR>
+
+	  <TR>
+	         <TH width="60%">AMOUNT</TH>
+		 <TD width="60%"><INPUT TYPE="number" NAME="amt_transfer"></TD>
+	  </TR>
+	  	 
+
+ </center>
+ <br>
+ </br>
+
+<center>
+	<form>
+	<TR><TH width="50%">Click  On Submit</TH><BR>
+	<TD>
+        <input type="button" id="idname" value = "submit " onclick="goToInfo()"/><br>
+	</TD>
+	</TR>
+	</form>
+</center>
+	<script>
+	type="text/javascript">
+        function goToInfo(){
+	window.location = 'http://localhost:8080/bharathi/moneytransfer.jsp';
+
+        }
+
+
+    	</script>
+        
+</TABLE>
+
+</head>
+
+
+
+</body>
+</html>
